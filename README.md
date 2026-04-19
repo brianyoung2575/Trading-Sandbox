@@ -8,5 +8,12 @@ What this project includes
 - Real-time profit and loss tracking  
 - Streamlit interface for interacting with the system  
 
-Live app  
+## Live App
 https://trading-sandbox-brian-young.streamlit.app/
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
