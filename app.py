@@ -26,7 +26,7 @@ if st.session_state.close_id is not None:
     st.session_state.close_id = None
 
 now = time.time()
-if now - st.session_state.last_update >= 3:
+if now - st.session_state.last_update >= 2:
     st.session_state.price = step_price(st.session_state.price)
     st.session_state.history.append(st.session_state.price)
     st.session_state.last_update = now
@@ -100,5 +100,5 @@ else:
                 st.session_state.close_id = pos["id"]
                 st.rerun()
 
-time.sleep(3)
+time.sleep(2)
 st.rerun()
